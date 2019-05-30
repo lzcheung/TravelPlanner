@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B84189102298B79F00699CC2 /* ItineraryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841890F2298B79F00699CC2 /* ItineraryTVCell.swift */; };
+		B8418912229A72DF00699CC2 /* EditItineraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418911229A72DF00699CC2 /* EditItineraryVC.swift */; };
+		B8A20056228CF378004534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A20055228CF378004534FA /* AppDelegate.swift */; };
+		B8A2005B228CF378004534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A20059228CF378004534FA /* Main.storyboard */; };
+		B8A2005D228CF378004534FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A2005C228CF378004534FA /* Assets.xcassets */; };
+		B8A20060228CF378004534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A2005E228CF378004534FA /* LaunchScreen.storyboard */; };
+		B8A20068228D05B7004534FA /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A20067228D05B7004534FA /* Itinerary.swift */; };
+		B8A2006A228D0797004534FA /* ItineraryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A20069228D0797004534FA /* ItineraryListVC.swift */; };
+		B8E25FA8229BCEF9001E836D /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25F9C229BCEF9001E836D /* YoshikoTextField.swift */; };
+		B8E25FA9229BCEF9001E836D /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25F9E229BCEF9001E836D /* HoshiTextField.swift */; };
+		B8E25FAA229BCEF9001E836D /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25F9F229BCEF9001E836D /* MinoruTextField.swift */; };
+		B8E25FAB229BCEF9001E836D /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA0229BCEF9001E836D /* YokoTextField.swift */; };
+		B8E25FAC229BCEF9001E836D /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA1229BCEF9001E836D /* TextFieldEffects.swift */; };
+		B8E25FAD229BCEF9001E836D /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA2229BCEF9001E836D /* JiroTextField.swift */; };
+		B8E25FAE229BCEF9001E836D /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA3229BCEF9001E836D /* MadokaTextField.swift */; };
+		B8E25FAF229BCEF9001E836D /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA4229BCEF9001E836D /* KaedeTextField.swift */; };
+		B8E25FB0229BCEF9001E836D /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA5229BCEF9001E836D /* AkiraTextField.swift */; };
+		B8E25FB1229BCEF9001E836D /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA6229BCEF9001E836D /* IsaoTextField.swift */; };
+		B8E25FB4229CEA09001E836D /* IterinaryCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB3229CEA09001E836D /* IterinaryCalendarVC.swift */; };
+		B8E25FB6229CF9AC001E836D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB5229CF9AC001E836D /* DateCell.swift */; };
+		B8E25FB8229DB9CE001E836D /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB7229DB9CE001E836D /* DateHeader.swift */; };
+		B8E25FBA229DF830001E836D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB9229DF830001E836D /* Activity.swift */; };
+		B8E25FBC229E4A67001E836D /* DailyActivityTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FBB229E4A67001E836D /* DailyActivityTVC.swift */; };
+		B8E25FC2229E4C15001E836D /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FC1229E4C15001E836D /* ActivityCell.swift */; };
+		CCEB77B37CAA9D62C41E69BF /* Pods_TravelPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2A4C18E41CF6E84819D3C8 /* Pods_TravelPlanner.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1932502669F094429AA55589 /* Pods-TravelPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelPlanner.release.xcconfig"; path = "Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		7C33157F4C60E1AF58B7D636 /* Pods-TravelPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelPlanner.debug.xcconfig"; path = "Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		B841890F2298B79F00699CC2 /* ItineraryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryTVCell.swift; sourceTree = "<group>"; };
+		B8418911229A72DF00699CC2 /* EditItineraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItineraryVC.swift; sourceTree = "<group>"; };
+		B8A20052228CF378004534FA /* TravelPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A20055228CF378004534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8A2005A228CF378004534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8A2005C228CF378004534FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8A2005F228CF378004534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8A20061228CF378004534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A20067228D05B7004534FA /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
+		B8A20069228D0797004534FA /* ItineraryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryListVC.swift; sourceTree = "<group>"; };
+		B8E25F9C229BCEF9001E836D /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		B8E25F9D229BCEF9001E836D /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		B8E25F9E229BCEF9001E836D /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		B8E25F9F229BCEF9001E836D /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		B8E25FA0229BCEF9001E836D /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		B8E25FA1229BCEF9001E836D /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		B8E25FA2229BCEF9001E836D /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		B8E25FA3229BCEF9001E836D /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		B8E25FA4229BCEF9001E836D /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		B8E25FA5229BCEF9001E836D /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		B8E25FA6229BCEF9001E836D /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		B8E25FB3229CEA09001E836D /* IterinaryCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterinaryCalendarVC.swift; sourceTree = "<group>"; };
+		B8E25FB5229CF9AC001E836D /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		B8E25FB7229DB9CE001E836D /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		B8E25FB9229DF830001E836D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		B8E25FBB229E4A67001E836D /* DailyActivityTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyActivityTVC.swift; sourceTree = "<group>"; };
+		B8E25FC1229E4C15001E836D /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		DD2A4C18E41CF6E84819D3C8 /* Pods_TravelPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8A2004F228CF378004534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEB77B37CAA9D62C41E69BF /* Pods_TravelPlanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC0835D9D4FEC39718FF224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A4C18E41CF6E84819D3C8 /* Pods_TravelPlanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92FBA39505FC6E8A84F9F4BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C33157F4C60E1AF58B7D636 /* Pods-TravelPlanner.debug.xcconfig */,
+				1932502669F094429AA55589 /* Pods-TravelPlanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8A20049228CF378004534FA = {
+			isa = PBXGroup;
+			children = (
+				B8A20054228CF378004534FA /* TravelPlanner */,
+				B8A20053228CF378004534FA /* Products */,
+				B8E25F9B229BCEF9001E836D /* TextFieldEffects */,
+				92FBA39505FC6E8A84F9F4BA /* Pods */,
+				0AC0835D9D4FEC39718FF224 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8A20053228CF378004534FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8A20052228CF378004534FA /* TravelPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8A20054228CF378004534FA /* TravelPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				B8E25FBE229E4AE8001E836D /* ItinerariesList */,
+				B8E25FBF229E4B0C001E836D /* Calender */,
+				B8A20055228CF378004534FA /* AppDelegate.swift */,
+				B8A20059228CF378004534FA /* Main.storyboard */,
+				B8E25FC0229E4B35001E836D /* DetailedItinerary */,
+				B8E25FBD229E4A79001E836D /* Model */,
+				B8A2005C228CF378004534FA /* Assets.xcassets */,
+				B8A2005E228CF378004534FA /* LaunchScreen.storyboard */,
+				B8A20061228CF378004534FA /* Info.plist */,
+			);
+			path = TravelPlanner;
+			sourceTree = "<group>";
+		};
+		B8E25F9B229BCEF9001E836D /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				B8E25F9C229BCEF9001E836D /* YoshikoTextField.swift */,
+				B8E25F9D229BCEF9001E836D /* TextFieldEffects.h */,
+				B8E25F9E229BCEF9001E836D /* HoshiTextField.swift */,
+				B8E25F9F229BCEF9001E836D /* MinoruTextField.swift */,
+				B8E25FA0229BCEF9001E836D /* YokoTextField.swift */,
+				B8E25FA1229BCEF9001E836D /* TextFieldEffects.swift */,
+				B8E25FA2229BCEF9001E836D /* JiroTextField.swift */,
+				B8E25FA3229BCEF9001E836D /* MadokaTextField.swift */,
+				B8E25FA4229BCEF9001E836D /* KaedeTextField.swift */,
+				B8E25FA5229BCEF9001E836D /* AkiraTextField.swift */,
+				B8E25FA6229BCEF9001E836D /* IsaoTextField.swift */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		B8E25FBD229E4A79001E836D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8E25FB9229DF830001E836D /* Activity.swift */,
+				B8A20067228D05B7004534FA /* Itinerary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8E25FBE229E4AE8001E836D /* ItinerariesList */ = {
+			isa = PBXGroup;
+			children = (
+				B841890F2298B79F00699CC2 /* ItineraryTVCell.swift */,
+				B8418911229A72DF00699CC2 /* EditItineraryVC.swift */,
+				B8A20069228D0797004534FA /* ItineraryListVC.swift */,
+			);
+			path = ItinerariesList;
+			sourceTree = "<group>";
+		};
+		B8E25FBF229E4B0C001E836D /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				B8E25FB7229DB9CE001E836D /* DateHeader.swift */,
+				B8E25FB3229CEA09001E836D /* IterinaryCalendarVC.swift */,
+				B8E25FB5229CF9AC001E836D /* DateCell.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		B8E25FC0229E4B35001E836D /* DetailedItinerary */ = {
+			isa = PBXGroup;
+			children = (
+				B8E25FBB229E4A67001E836D /* DailyActivityTVC.swift */,
+				B8E25FC1229E4C15001E836D /* ActivityCell.swift */,
+			);
+			path = DetailedItinerary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8A20051228CF378004534FA /* TravelPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A20064228CF378004534FA /* Build configuration list for PBXNativeTarget "TravelPlanner" */;
+			buildPhases = (
+				261714BC5B81CC373E399827 /* [CP] Check Pods Manifest.lock */,
+				B8A2004E228CF378004534FA /* Sources */,
+				B8A2004F228CF378004534FA /* Frameworks */,
+				B8A20050228CF378004534FA /* Resources */,
+				A473FB30540787EE03B6BB65 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelPlanner;
+			productName = TravelPlanner;
+			productReference = B8A20052228CF378004534FA /* TravelPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8A2004A228CF378004534FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = LZCHEUNG;
+				TargetAttributes = {
+					B8A20051228CF378004534FA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B8A2004D228CF378004534FA /* Build configuration list for PBXProject "TravelPlanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8A20049228CF378004534FA;
+			productRefGroup = B8A20053228CF378004534FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8A20051228CF378004534FA /* TravelPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8A20050228CF378004534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A20060228CF378004534FA /* LaunchScreen.storyboard in Resources */,
+				B8A2005D228CF378004534FA /* Assets.xcassets in Resources */,
+				B8A2005B228CF378004534FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		261714BC5B81CC373E399827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A473FB30540787EE03B6BB65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8A2004E228CF378004534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E25FB4229CEA09001E836D /* IterinaryCalendarVC.swift in Sources */,
+				B8A20056228CF378004534FA /* AppDelegate.swift in Sources */,
+				B8E25FA9229BCEF9001E836D /* HoshiTextField.swift in Sources */,
+				B8E25FB0229BCEF9001E836D /* AkiraTextField.swift in Sources */,
+				B8E25FC2229E4C15001E836D /* ActivityCell.swift in Sources */,
+				B8418912229A72DF00699CC2 /* EditItineraryVC.swift in Sources */,
+				B8E25FAA229BCEF9001E836D /* MinoruTextField.swift in Sources */,
+				B8E25FBC229E4A67001E836D /* DailyActivityTVC.swift in Sources */,
+				B8E25FAC229BCEF9001E836D /* TextFieldEffects.swift in Sources */,
+				B8E25FB6229CF9AC001E836D /* DateCell.swift in Sources */,
+				B8E25FAD229BCEF9001E836D /* JiroTextField.swift in Sources */,
+				B8E25FBA229DF830001E836D /* Activity.swift in Sources */,
+				B8E25FAE229BCEF9001E836D /* MadokaTextField.swift in Sources */,
+				B8E25FAF229BCEF9001E836D /* KaedeTextField.swift in Sources */,
+				B8E25FB1229BCEF9001E836D /* IsaoTextField.swift in Sources */,
+				B8E25FB8229DB9CE001E836D /* DateHeader.swift in Sources */,
+				B84189102298B79F00699CC2 /* ItineraryTVCell.swift in Sources */,
+				B8E25FAB229BCEF9001E836D /* YokoTextField.swift in Sources */,
+				B8A2006A228D0797004534FA /* ItineraryListVC.swift in Sources */,
+				B8E25FA8229BCEF9001E836D /* YoshikoTextField.swift in Sources */,
+				B8A20068228D05B7004534FA /* Itinerary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8A20059228CF378004534FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A2005A228CF378004534FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8A2005E228CF378004534FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A2005F228CF378004534FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8A20062228CF378004534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8A20063228CF378004534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8A20065228CF378004534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C33157F4C60E1AF58B7D636 /* Pods-TravelPlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravelPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.calpoly.csc.lzcheung.TravelPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8A20066228CF378004534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1932502669F094429AA55589 /* Pods-TravelPlanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravelPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.calpoly.csc.lzcheung.TravelPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8A2004D228CF378004534FA /* Build configuration list for PBXProject "TravelPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A20062228CF378004534FA /* Debug */,
+				B8A20063228CF378004534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A20064228CF378004534FA /* Build configuration list for PBXNativeTarget "TravelPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A20065228CF378004534FA /* Debug */,
+				B8A20066228CF378004534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8A2004A228CF378004534FA /* Project object */;
+}
