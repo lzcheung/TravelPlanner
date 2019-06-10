@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CoreLocation
+import MapKit
 
 class Activities : Codable {
     // TODO need to sort by start times
@@ -21,20 +21,48 @@ class Activities : Codable {
         activities.append(activity)
     }
     
+    func appendAtIndex(activity: Activity, index: Int) {
+        activities[index] = activity
+    }
+    
     func remove(at index: Int) {
         activities.remove(at: index)
     }
+    
+    func get(index: Int) -> Activity? {
+        return activities[index]
+    }
 }
 
-struct Activity : Codable {
+class Activity : NSObject, Codable, MKAnnotation {
+    static let timeFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        return formatter
+    }()
+    
     var name : String
+    var address : String
     var lat : Double
     var long : Double
     var startTime: Date
     var endTime: Date
     
-    init(name: String, lat: Double, long: Double, startTime: Date, endTime: Date) {
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: lat, longitude: long)
+    }
+    
+    var title: String? {
+        return name
+    }
+    
+    var subtitle: String? {
+        return "\(Activity.timeFormatter.string(from: startTime)) - \(Activity.timeFormatter.string(from: endTime))"
+    }
+    
+    init(name: String, address: String, lat: Double, long: Double, startTime: Date, endTime: Date) {
         self.name = name
+        self.address = address
         self.lat = lat
         self.long = long
         self.startTime = startTime

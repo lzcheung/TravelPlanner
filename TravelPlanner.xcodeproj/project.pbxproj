@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B817107122A836AD009B486E /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B817107022A836AD009B486E /* DataStorage.swift */; };
+		B817107322AD9F3D009B486E /* ActivityDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B817107222AD9F3D009B486E /* ActivityDetailsVC.swift */; };
 		B84189102298B79F00699CC2 /* ItineraryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841890F2298B79F00699CC2 /* ItineraryTVCell.swift */; };
 		B8418912229A72DF00699CC2 /* EditItineraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8418911229A72DF00699CC2 /* EditItineraryVC.swift */; };
 		B8A20056228CF378004534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A20055228CF378004534FA /* AppDelegate.swift */; };
@@ -15,6 +17,9 @@
 		B8A20060228CF378004534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A2005E228CF378004534FA /* LaunchScreen.storyboard */; };
 		B8A20068228D05B7004534FA /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A20067228D05B7004534FA /* Itinerary.swift */; };
 		B8A2006A228D0797004534FA /* ItineraryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A20069228D0797004534FA /* ItineraryListVC.swift */; };
+		B8A7D1CD22A18A3000E8842A /* EditActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7D1CC22A18A2F00E8842A /* EditActivityVC.swift */; };
+		B8A7D1CF22A1A64D00E8842A /* SearchLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7D1CE22A1A64D00E8842A /* SearchLocationVC.swift */; };
+		B8A7D1D122A1A9BB00E8842A /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7D1D022A1A9BB00E8842A /* LocationSearchTable.swift */; };
 		B8E25FA8229BCEF9001E836D /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25F9C229BCEF9001E836D /* YoshikoTextField.swift */; };
 		B8E25FA9229BCEF9001E836D /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25F9E229BCEF9001E836D /* HoshiTextField.swift */; };
 		B8E25FAA229BCEF9001E836D /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25F9F229BCEF9001E836D /* MinoruTextField.swift */; };
@@ -25,7 +30,7 @@
 		B8E25FAF229BCEF9001E836D /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA4229BCEF9001E836D /* KaedeTextField.swift */; };
 		B8E25FB0229BCEF9001E836D /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA5229BCEF9001E836D /* AkiraTextField.swift */; };
 		B8E25FB1229BCEF9001E836D /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FA6229BCEF9001E836D /* IsaoTextField.swift */; };
-		B8E25FB4229CEA09001E836D /* IterinaryCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB3229CEA09001E836D /* IterinaryCalendarVC.swift */; };
+		B8E25FB4229CEA09001E836D /* ItineraryCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB3229CEA09001E836D /* ItineraryCalendarVC.swift */; };
 		B8E25FB6229CF9AC001E836D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB5229CF9AC001E836D /* DateCell.swift */; };
 		B8E25FB8229DB9CE001E836D /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB7229DB9CE001E836D /* DateHeader.swift */; };
 		B8E25FBA229DF830001E836D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E25FB9229DF830001E836D /* Activity.swift */; };
@@ -37,6 +42,8 @@
 /* Begin PBXFileReference section */
 		1932502669F094429AA55589 /* Pods-TravelPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelPlanner.release.xcconfig"; path = "Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		7C33157F4C60E1AF58B7D636 /* Pods-TravelPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelPlanner.debug.xcconfig"; path = "Target Support Files/Pods-TravelPlanner/Pods-TravelPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		B817107022A836AD009B486E /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		B817107222AD9F3D009B486E /* ActivityDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsVC.swift; sourceTree = "<group>"; };
 		B841890F2298B79F00699CC2 /* ItineraryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryTVCell.swift; sourceTree = "<group>"; };
 		B8418911229A72DF00699CC2 /* EditItineraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItineraryVC.swift; sourceTree = "<group>"; };
 		B8A20052228CF378004534FA /* TravelPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +54,9 @@
 		B8A20061228CF378004534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8A20067228D05B7004534FA /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
 		B8A20069228D0797004534FA /* ItineraryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryListVC.swift; sourceTree = "<group>"; };
+		B8A7D1CC22A18A2F00E8842A /* EditActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityVC.swift; sourceTree = "<group>"; };
+		B8A7D1CE22A1A64D00E8842A /* SearchLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationVC.swift; sourceTree = "<group>"; };
+		B8A7D1D022A1A9BB00E8842A /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		B8E25F9C229BCEF9001E836D /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		B8E25F9D229BCEF9001E836D /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		B8E25F9E229BCEF9001E836D /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -58,7 +68,7 @@
 		B8E25FA4229BCEF9001E836D /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
 		B8E25FA5229BCEF9001E836D /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		B8E25FA6229BCEF9001E836D /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
-		B8E25FB3229CEA09001E836D /* IterinaryCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterinaryCalendarVC.swift; sourceTree = "<group>"; };
+		B8E25FB3229CEA09001E836D /* ItineraryCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryCalendarVC.swift; sourceTree = "<group>"; };
 		B8E25FB5229CF9AC001E836D /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		B8E25FB7229DB9CE001E836D /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 		B8E25FB9229DF830001E836D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -154,6 +164,7 @@
 			children = (
 				B8E25FB9229DF830001E836D /* Activity.swift */,
 				B8A20067228D05B7004534FA /* Itinerary.swift */,
+				B817107022A836AD009B486E /* DataStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				B8E25FB7229DB9CE001E836D /* DateHeader.swift */,
-				B8E25FB3229CEA09001E836D /* IterinaryCalendarVC.swift */,
+				B8E25FB3229CEA09001E836D /* ItineraryCalendarVC.swift */,
 				B8E25FB5229CF9AC001E836D /* DateCell.swift */,
 			);
 			path = Calender;
@@ -181,8 +192,12 @@
 		B8E25FC0229E4B35001E836D /* DetailedItinerary */ = {
 			isa = PBXGroup;
 			children = (
+				B8A7D1D022A1A9BB00E8842A /* LocationSearchTable.swift */,
 				B8E25FBB229E4A67001E836D /* DailyActivityTVC.swift */,
 				B8E25FC1229E4C15001E836D /* ActivityCell.swift */,
+				B8A7D1CC22A18A2F00E8842A /* EditActivityVC.swift */,
+				B8A7D1CE22A1A64D00E8842A /* SearchLocationVC.swift */,
+				B817107222AD9F3D009B486E /* ActivityDetailsVC.swift */,
 			);
 			path = DetailedItinerary;
 			sourceTree = "<group>";
@@ -302,18 +317,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E25FB4229CEA09001E836D /* IterinaryCalendarVC.swift in Sources */,
+				B8E25FB4229CEA09001E836D /* ItineraryCalendarVC.swift in Sources */,
 				B8A20056228CF378004534FA /* AppDelegate.swift in Sources */,
 				B8E25FA9229BCEF9001E836D /* HoshiTextField.swift in Sources */,
 				B8E25FB0229BCEF9001E836D /* AkiraTextField.swift in Sources */,
 				B8E25FC2229E4C15001E836D /* ActivityCell.swift in Sources */,
 				B8418912229A72DF00699CC2 /* EditItineraryVC.swift in Sources */,
+				B8A7D1CF22A1A64D00E8842A /* SearchLocationVC.swift in Sources */,
 				B8E25FAA229BCEF9001E836D /* MinoruTextField.swift in Sources */,
 				B8E25FBC229E4A67001E836D /* DailyActivityTVC.swift in Sources */,
 				B8E25FAC229BCEF9001E836D /* TextFieldEffects.swift in Sources */,
+				B8A7D1CD22A18A3000E8842A /* EditActivityVC.swift in Sources */,
 				B8E25FB6229CF9AC001E836D /* DateCell.swift in Sources */,
+				B817107122A836AD009B486E /* DataStorage.swift in Sources */,
 				B8E25FAD229BCEF9001E836D /* JiroTextField.swift in Sources */,
 				B8E25FBA229DF830001E836D /* Activity.swift in Sources */,
+				B8A7D1D122A1A9BB00E8842A /* LocationSearchTable.swift in Sources */,
+				B817107322AD9F3D009B486E /* ActivityDetailsVC.swift in Sources */,
 				B8E25FAE229BCEF9001E836D /* MadokaTextField.swift in Sources */,
 				B8E25FAF229BCEF9001E836D /* KaedeTextField.swift in Sources */,
 				B8E25FB1229BCEF9001E836D /* IsaoTextField.swift in Sources */,

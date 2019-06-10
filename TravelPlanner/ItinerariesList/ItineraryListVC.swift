@@ -9,38 +9,27 @@
 import UIKit
 
 class ItineraryListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    static let documentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
-    static let archiveURL = documentsDirectory.appendingPathComponent("userItineraries")
-    
     @IBOutlet weak var tableView: UITableView!
     
-    private var itineraries : [Itinerary] = []
+    private var dataStore : DataStorage = DataStorage.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         tableView.delegate = self
-
-        do {
-            let data = try Data(contentsOf: ItineraryListVC.archiveURL)
-            let decoder = JSONDecoder()
-            let tempArr = try decoder.decode([Itinerary].self, from: data)
-            itineraries = tempArr
-        } catch {
-            print("Previous data not found")
-            print(error)
-        }
+        
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itineraries.count
+        return dataStore.itineraries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItineraryCell", for: indexPath) as! ItineraryTVCell
         
-        let itinerary = itineraries[indexPath.row]
+        let itinerary = dataStore.itineraries[indexPath.row]
         
         cell.setCellData(itinerary: itinerary)
         
@@ -48,38 +37,47 @@ class ItineraryListVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         return cell
     }
     
-    func updatePersistentStorage() {
-        // persist data
-        let encoder = JSONEncoder()
-        do {
-            let jsonData = try encoder.encode(itineraries)
-            try jsonData.write(to: ItineraryListVC.archiveURL)
-
-        } catch {
-            print(error)
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            dataStore.itineraries.remove(at: (indexPath as NSIndexPath).row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            dataStore.updatePersistentStorage()
         }
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        tableView.setEditing(!tableView.isEditing, animated: true)
+        navigationItem.leftBarButtonItem?.title = tableView.isEditing ? "Done" : "Edit"
     }
     
     @IBAction func saveToTripList(_ segue: UIStoryboardSegue) {
         if let editItineraryVC = segue.source as? EditItineraryVC, let itinerary = editItineraryVC.itinerary {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                itineraries[selectedIndexPath.row] = itinerary
                 tableView.reloadRows(at: [selectedIndexPath], with: .none)
             } else {
                 // update the tableView
-                let indexPath = IndexPath(row: itineraries.count, section: 0)
-                itineraries.append(itinerary)
+                let indexPath = IndexPath(row: dataStore.itineraries.count, section: 0)
+                dataStore.itineraries.append(itinerary)
                 tableView.insertRows(at: [indexPath], with: .automatic)
             }
-            updatePersistentStorage()
+            dataStore.updatePersistentStorage()
         }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCalenderSegue" {
-            let calendarVC = segue.destination as? IterinaryCalendarVC
+            let calendarVC = segue.destination as? ItineraryCalenderVC
             let index = tableView.indexPathForSelectedRow
-            calendarVC?.itinerary = itineraries[index!.row]
+            calendarVC?.itinerary = dataStore.itineraries[index!.row]
+        } else if segue.identifier == "addItinerarySegue" {
+            if let index = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: index, animated: true)
+            }
         }
     }
 }

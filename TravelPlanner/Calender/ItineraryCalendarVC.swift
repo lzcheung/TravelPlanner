@@ -9,10 +9,11 @@
 import UIKit
 import JTAppleCalendar
 
-class IterinaryCalendarVC: UIViewController {
+class ItineraryCalenderVC: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var selectedDateLabel: UILabel!
     @IBOutlet weak var expandDetailsButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     var itinerary: Itinerary?
     var selectedDate: Date?
@@ -25,6 +26,9 @@ class IterinaryCalendarVC: UIViewController {
         calendarView.scrollDirection = .horizontal
         calendarView.scrollingMode   = .stopAtEachCalendarFrame
         calendarView.showsHorizontalScrollIndicator = false
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func configureCell(view: JTAppleCell?, cellState: CellState) {
@@ -66,15 +70,19 @@ class IterinaryCalendarVC: UIViewController {
                 expandDetailsButton.isHidden = false
                 selectedDateLabel.isHidden = false
                 selectedDateLabel.text = formatter.string(from: cellState.date)
+                tableView.isHidden = false
+                tableView.reloadData()
             } else {
                 selectedDateLabel.text = ""
                 selectedDateLabel.isHidden = true
                 expandDetailsButton.isHidden = true
+                tableView.isHidden = true
             }
         } else {
             selectedDateLabel.text = ""
             selectedDateLabel.isHidden = true
             expandDetailsButton.isHidden = true
+            tableView.isHidden = true
         }
     }
     
@@ -86,20 +94,18 @@ class IterinaryCalendarVC: UIViewController {
             let editItineraryVC = destinationVC.viewControllers[0] as! EditItineraryVC
             editItineraryVC.itinerary = itinerary
         } else if segue.identifier == "toDetailActivitySegue" {
-            let destinationVC = segue.destination as! UITabBarController
-            destinationVC.selectedIndex = 0
-            let dailyActivityTVC = destinationVC.selectedViewController as! DailyActivityTVC
+            let destinationVC = segue.destination as! DailyActivityTVC
             if let activities = itinerary?.getActivitiesByDate(date: selectedDate!) {
-                dailyActivityTVC.activities = activities
+                destinationVC.activities = activities
             } else {
                 let activities = itinerary?.createActivitiesAtDate(date: selectedDate!)
-                dailyActivityTVC.activities = activities
+                destinationVC.activities = activities
             }
         }
     }
 }
 
-extension IterinaryCalendarVC: JTAppleCalendarViewDataSource {
+extension ItineraryCalenderVC: JTAppleCalendarViewDataSource {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         formatter.dateFormat = "yyyy MM dd"
         let startDate = itinerary?.startDate ?? formatter.date(from: "2019 01 01")!
@@ -108,7 +114,7 @@ extension IterinaryCalendarVC: JTAppleCalendarViewDataSource {
     }
 }
 
-extension IterinaryCalendarVC: JTAppleCalendarViewDelegate {
+extension ItineraryCalenderVC: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCell
         self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)
@@ -142,4 +148,24 @@ extension IterinaryCalendarVC: JTAppleCalendarViewDelegate {
     func calendarSizeForMonths(_ calendar: JTAppleCalendarView?) -> MonthSize? {
         return MonthSize(defaultSize: 50)
     }
+}
+
+extension ItineraryCalenderVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let date = selectedDate, let activitiesWrapper = itinerary?.activities[date] {
+            return activitiesWrapper.activities.count
+        }
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "simpleActivitiesCell", for: indexPath)
+        if let date = selectedDate, let activitiesWrapper = itinerary?.activities[date] {
+            let activity = activitiesWrapper.get(index: indexPath.row)
+            cell.textLabel?.text = "\(activity?.subtitle ?? "") \(activity?.name ?? "")"
+        }
+        return cell
+    }
+    
+    
 }

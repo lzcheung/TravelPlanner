@@ -37,7 +37,7 @@ class EditItineraryVC: UIViewController {
         
         endDatePicker = UIDatePicker()
         endDatePicker?.datePickerMode = .date
-        endDatePicker?.addTarget(self, action: #selector(endDateChanged(datePicker:)), for: .valueChanged)
+        endDatePicker?.addTarget(self, action: #selector(EditItineraryVC.endDateChanged(datePicker:)), for: .valueChanged)
         
         startDateTF.inputView = startDatePicker
         endDateTF.inputView = endDatePicker
@@ -135,7 +135,14 @@ class EditItineraryVC: UIViewController {
             let startDate = dateFormatter.date(from: startDateTF.text!),
             let endDate = dateFormatter.date(from: endDateTF.text!)
         {
-            itinerary = Itinerary(name: name, location: location, startDate: startDate, endDate: endDate)
+            if let existingItinerary = itinerary {
+                existingItinerary.name = name
+                existingItinerary.location = location
+                existingItinerary.startDate = startDate
+                existingItinerary.endDate = endDate
+            } else {
+                itinerary = Itinerary(name: name, location: location, startDate: startDate, endDate: endDate)
+            }
         }
     }
 
